@@ -1,0 +1,81 @@
+/* колір основного  тексту rgba(117, 117, 117, 1) */
+
+/* колір заголовків тексту rgba(33, 33, 33, 1) */
+
+/* білий колір фону rgba(255, 255, 255, 1) */
+
+/* колір акцентів у тексті rgba(33, 150, 243, 1) */
+
+/* колір тексту в підвалі rgba(255, 255, 255, 0.6) */
+
+/* вторинний колір фону rgba(47, 48, 58, 1) */
+
+/* колір кнопок портфоліо rgba(245, 244, 250, 1) */
+
+:root {
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: rgba(33, 33, 33, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+  --primary-background-color: rgba(255, 255, 255, 1);
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --section-background-color: rgba(47, 48, 58, 1);
+  --filters-button-color: rgba(245, 244, 250, 1);
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/* Logo style */
+
+.logo {
+  color: var(--title-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.logo-item {
+  color: var(--accent-color);
+}
+
+/* Site nav */
+
+.link {
+  color: var(--title-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero  */
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Filtrs buttons  */
+
+.button-header {
+  background-color: var(--accent-color);
+  color: rgba(255, 255, 255, 1);
+}
+
+.button-item {
+  background-color: var(--filters-button-color);
+  color: rgba(33, 33, 33, 1);
+}
