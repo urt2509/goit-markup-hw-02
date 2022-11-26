@@ -1,29 +1,42 @@
-/* колір основного  тексту rgba(117, 117, 117, 1) */
+/* primary text color #757575 */
 
-/* колір заголовків тексту rgba(33, 33, 33, 1) */
+/* primary background color #ffffff */
 
-/* білий колір фону rgba(255, 255, 255, 1) */
+/* logo accent color #2196F3 */
 
-/* колір акцентів у тексті rgba(33, 150, 243, 1) */
+/* logo text color #000000 */
 
-/* колір тексту в підвалі rgba(255, 255, 255, 0.6) */
+/* title text color #212121 */
 
-/* вторинний колір фону rgba(47, 48, 58, 1) */
+/* text accent and buttons active color #2196F3 */
 
-/* колір кнопок портфоліо rgba(245, 244, 250, 1) */
+/* hero titles color #FFFFFF */
 
+/* footer text color rgba(255, 255, 255, 0.6) */
+
+/* secondary (hero and footer) background color #2F303A */
+
+/* section team and buttons background color #F5F4FA */
+
+/* hero button active color #188CE8 */
 :root {
-  --primary-text-color: rgba(117, 117, 117, 1);
-  --title-text-color: rgba(33, 33, 33, 1);
-  --accent-color: rgba(33, 150, 243, 1);
-  --primary-background-color: rgba(255, 255, 255, 1);
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --logo-text-color: #000000;
+  --primary-bcg-color: #ffffff;
   --footer-text-color: rgba(255, 255, 255, 0.6);
-  --section-background-color: rgba(47, 48, 58, 1);
-  --filters-button-color: rgba(245, 244, 250, 1);
+  --section-bcg-color: #f5f5f5;
+  --title-text-color: #212121;
+
+  --secondary-bcg-color: #2f303a;
+
+  --team-section-bcg-color: #f5f4fa;
+  --button-choice-active: #188ce8;
 }
 
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--primary-bcg-color);
   color: var(--primary-text-color);
 }
 
@@ -31,51 +44,119 @@ body {
   list-style: none;
 }
 
-a {
-  text-decoration-line: none;
+.link {
+  text-decoration: none;
 }
 
-/* Logo style */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
-.logo {
+.button {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+/* Logo */
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.logo-text {
+  color: var(--logo-text-color);
+}
+
+/* Navigation */
+
+.site-nav .link {
   color: var(--title-text-color);
 }
 
-.logo:hover,
-.logo:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Address */
+
+.contact {
+  color: var(--primary-text-color);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--secondary-bcg-color);
+  color: var(--secondary-text-color);
+}
+
+.hero-title {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--button-choice-active);
+}
+
+/* Features */
+
+.section {
+  background-color: var(--section-bcg-color);
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+
+.team-section {
+  background-color: var(--team-section-bcg-color);
+}
+
+.team-card {
+  background-color: var(--primary-bcg-color);
+}
+
+/* Footer */
+.footer-bcg {
+  background-color: var(--secondary-bcg-color);
 }
 
 .logo-item {
-  color: var(--accent-color);
+  color: var(--secondary-text-color);
 }
 
-/* Site nav */
-
-.link {
-  color: var(--title-text-color);
+.contact-map {
+  color: var(--secondary-text-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+.contact.accent {
+  color: var(--footer-text-color);
 }
 
-/* Hero  */
+/* Portfolio */
 
-/* Section */
-.section-title {
-  color: var(--title-text-color);
-}
-
-/* Filtrs buttons  */
-
-.button-header {
-  background-color: var(--accent-color);
-  color: rgba(255, 255, 255, 1);
-}
-
-.button-item {
-  background-color: var(--filters-button-color);
-  color: rgba(33, 33, 33, 1);
+.projects {
+  background-color: var(--primary-bcg-color);
 }
